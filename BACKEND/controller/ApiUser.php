@@ -90,7 +90,8 @@ class ApiUser
                     'userFirstName' => $userFirstName,
                     'userLastName' => $userLastName,
                     'userEmail' => $userEmail,
-                    'userCIN' => $userCIN
+                    'userCIN' => $userCIN,
+                    'userPassword' => $userPassword,
                 );
                 array_push($users_arr['data'], $user_arr);
             }

@@ -25,7 +25,7 @@ class Users
     public function read()
     {
         // $query = 'SELECT * FROM' . $this->table;
-        $query = ' SELECT * FROM ' . $this->table . ';';
+        $query = 'SELECT * FROM ' . $this->table . ';';
         // prepare statement
         $stmt = $this->conn->prepare($query);
         // execute statement
@@ -36,7 +36,7 @@ class Users
     // get one user informations
     public function read_single()
     {
-        $query = 'SELECT * FROM users  where userId=:userId ';
+        $query = 'SELECT * FROM users where userId=:userId ';
         // prepare statement
         $stmt = $this->conn->prepare($query);
         // bind user id
@@ -45,5 +45,4 @@ class Users
         $stmt->execute();
         return $stmt;
     }
-
 }

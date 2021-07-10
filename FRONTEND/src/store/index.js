@@ -5,6 +5,12 @@ export default createStore({
     count: 0,
   },
   mutations: {
+    decreasecounter(state) {
+      state.count--
+    },
+    increasecounter(state) {
+      state.count++
+    },
   },
   actions: {
   },
